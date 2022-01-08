@@ -74,7 +74,7 @@ async def on_ready():
 # Setup the game status task of the bot
 @tasks.loop(minutes=1.0)
 async def status_task():
-    statuses = ["with you!", "with Krypton!", "with humans!"]
+    statuses = ["with you!", "with discord!", "with humans!"]
     await bot.change_presence(activity=disnake.Game(random.choice(statuses)))
 
 
